@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SNT</title>
+</head>
+<body>
+    <h1>Hiển thị dãycác số nguyên tố đầu tiên</h1>
+</body>
+</html>
+<script>
+  function SNT() {
+    let nSNT = 0;
+    let count= 0;
+    for (let i =2; i <= 100; i++) {
+        
+        if (nSNT < n) {
+            for (let j = 1; j <= i; j++) {
+                if (i % j == 0) {
+                    count += 1;
+                }
+            }  
+            if (count == 2) {
+                document.write(i + ", ")
+                nSNT += 1;
+            }
+             
+            count = 0;
+       
+            
+        } else {
+            break;
+        }
+    }
+    
+}  
+let n = +prompt("nhap n so nguyen to dau tien: ");
+SNT();
+</script>
